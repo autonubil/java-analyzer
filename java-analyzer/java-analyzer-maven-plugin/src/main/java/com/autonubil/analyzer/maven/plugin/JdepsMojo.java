@@ -95,7 +95,7 @@ public class JdepsMojo extends AbstractMojo {
      *
      * @since 2.0-alpha-5
      */
-    @Parameter( property = "outputFile", default="target/dependencies.svg" )
+    @Parameter( property = "outputFile", defaultValue="target/dependencies.svg" )
     private File outputFile;
 
     /**
