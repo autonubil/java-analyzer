@@ -140,16 +140,15 @@ import net.sourceforge.plantuml.SourceStringReader;
 	        		SourceStringReader reader = new SourceStringReader(sw.toString());
 	        		
 	        		
-	        		System.out.println(sw.toString());
+	        		// System.out.println(sw.toString());
 	        		
 	        		try {
-		        		reader.generateDiagramDescription(new File("C:\\temp\\test.dot"));
 		        		ByteArrayOutputStream os = new ByteArrayOutputStream();
 						reader.generateImage(os, new FileFormatOption(FileFormat.SVG));
 						
-						FileOutputStream fos = new FileOutputStream("C:\\temp\\test.svg");
-						fos.write(os.toString().getBytes());
-						fos.close();
+//						FileOutputStream fos = new FileOutputStream("C:\\temp\\test.svg");
+//						fos.write(os.toString().getBytes());
+//						fos.close();
 						
 		        		this.writer.print(os.toString());
 					} catch (IOException e) {

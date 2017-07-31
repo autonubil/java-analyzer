@@ -104,7 +104,7 @@ public class DependencyAnalyser implements Analyzer {
 		}
 		String[] args = new String[cmd.size()];
 		cmd.toArray(args);
-		System.out.println(String.join(" ", args));
+		// System.out.println(String.join(" ", args));
 
 		StringWriter archive = new StringWriter();
 		PrintWriter localWriter = new PrintWriter(archive);
@@ -163,7 +163,7 @@ public class DependencyAnalyser implements Analyzer {
 
 //		this.jarDependencies.getClassesByJarAndNamespace();
 
-		System.out.println(archive.toString());
+//		System.out.println(archive.toString());
 
 	}
 
